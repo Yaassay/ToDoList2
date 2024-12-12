@@ -1,0 +1,121 @@
+/* Estilos principais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #627c75;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(28, 201, 129);
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Estilo para o campo de entrada e botões */
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#atividade {
+    padding: 10px;
+    width: 300px;
+    transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+}
+
+#prioridade {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #041e2b;
+    color: rgb(28, 201, 129);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a lista de tarefas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.low-priority {
+    background-color: #20bb25;
+    color: #20bb25;
+}
+
+.medium-priority {
+    background-color: #f0d800;
+}
+
+.high-priority {
+    background-color: #eb1228;
+}
+
+/* Estilo para os ícones de ação */
+button.icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+button.icon-btn:hover {
+    color: #007bff;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+footer a {
+    color: #2e445c;
+    text-decoration: none;
+}
